@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text" id="diem">
+     <button onclick="ok()">ok</button>
+     <p id="ketqua"></p> -->
+     <input type="text" id="name">
+     <button onclick="ok()">ok</button>
+     <p id="ketqua"></p>
+    <script>
+        // let a = +prompt("điêm toán");
+        // let b = +prompt("diểm lý");
+        // let c = +prompt("diểm hóa")
+        // let d = (a+b+c)/3;
+        // if (d>=8){
+        //     document.write("giỏi")
+        // }else if (d>=6 && d<=7.5){
+        //     document.write("khá")
+        // }else if (d>=5.5 && d<=3){
+        //     document.write("tb")
+        // }else {
+        //     document.write("yếu")
+        // }
+
+        // let a = +prompt("lượt 1")
+        // let b = +prompt("lượt 2")
+        // let c = +prompt("lượt 3")
+        // if(a<b && a>c){
+        //     document.write(`số lớn nhất: ${a},` )
+        // }else if(b>a && b>c) {
+        //     document.write(`số lớn nhất: ${b},` )
+        // }else{
+        //     document.write(`số lớn nhất: ${c},` );
+        // }
+        // if(c>a && c>b){
+        //     document.write(`số lớn thứ hai: ${a},` )
+        // }else if(b>c && b>a) {
+        //     document.write(`số lớn thu hai: ${b},` )
+        // }else{
+        //     document.write(`số lớn thư hai: ${c},` );
+        // }
+
+     
+        function ok() {
+            let number = +document.getElementById("name").value;
+            switch (number) {
+            case 2:
+            case 3:
+            case 4:
+            case 6:
+            case 8:
+                document.write("thang có 28 ngay")
+                break;
+            case 1:
+            case 5:
+            case 7:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+            document.write("tháng có 30 ngày")
+            break;
+            default:
+                document.write("không có dữ liệu")
+                break;
+
+        }
+        document.getElementById("ketqua").innerHTML= nunber;
+        }
+
+    </script>
+</body>
+
+</html>
